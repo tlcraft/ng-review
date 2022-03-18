@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-
+import { GreetingService } from '../services/greeting.service';
 @Component({
   selector: 'app-hello-world',
   templateUrl: './hello-world.component.html',
@@ -7,10 +7,8 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 })
 export class HelloWorldComponent implements OnInit, OnChanges {
   @Input() name: string;
-  private readonly greeting: string;
 
-  constructor() { 
-    this.greeting = "Hello";
+  constructor(private greetingService: GreetingService) { 
   }
 
   ngOnInit() {
@@ -24,6 +22,6 @@ export class HelloWorldComponent implements OnInit, OnChanges {
   }
 
   getMessage(): string {
-    return `${this.greeting}, ${this.name}!`;
+    return `${this.greetingService.getGreeting()}, ${this.name}!`;
   }
 }
