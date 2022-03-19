@@ -7,6 +7,5 @@
 </div>
 <label for="name">Enter your name:</label>
 <input type="text" id="name" [formControl]="name">
-<!-- <p>{{name.value}}</p> -->
 <app-hello-world name="{{name.value}}"></app-hello-world>
 <router-outlet></router-outlet>
