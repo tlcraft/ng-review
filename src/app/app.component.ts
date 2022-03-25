@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'ng-review';
-  name = new FormControl('');
 }

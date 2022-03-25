@@ -1,3 +1,8 @@
+<nav>
+  <a class="button" routerLink="/edit-greeting" routerLinkActive="active">Edit Greeting</a>
+</nav>
+<label for="name">Enter your name:</label>
+<input type="text" id="name" [formControl]="nameForm">
 <p>
   {{getMessage()}}
 </p>
