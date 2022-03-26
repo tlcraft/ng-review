@@ -2,5 +2,8 @@
   <a class="button" routerLink="/greeting" routerLinkActive="active">View Greeting</a>
 </nav>
 <p>
-  update-greeting works!
+  {{getCurrentGreeting()}}
 </p>
+<label for="greeting">Enter a new greeting:</label>
+<input type="text" id="greeting" [formControl]="greetingForm">
+<button (click)="saveGreeting()">Save</button>
