@@ -1,3 +1,10 @@
-<p>
-  {{getMessage()}}
-</p>
+<nav>
+  <a routerLink="/edit-greeting" routerLinkActive="active">Edit Greeting</a>
+</nav>
+<div>
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name" [formControl]="nameForm">
+  <p>
+    {{getMessage()}}
+  </p>
+</div>

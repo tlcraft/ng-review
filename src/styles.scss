@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    text-align: center;
+}
+
+a {
+    background-color: #EEEEEE;
+    text-decoration: none;
+    color: #333333;
+    padding: 4px;
+    margin: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+input {
+    margin-left: 5px;
+}
+
+button {
+    margin-left: 5px;
+}
